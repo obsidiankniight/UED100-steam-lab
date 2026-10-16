@@ -13,6 +13,7 @@ for f in pages:
  for href in re.findall(r'(?:src|href)="([^"]+)"',t):
   if href.startswith(('https:','http:','#','mailto:')):continue
   if '?' in href:href=href.split('?',1)[0]
+  if '#' in href:href=href.split('#',1)[0]
   if href.startswith('docs/') and href=='docs/README.md':pass
   if href and not (p/href).is_file():missing.append(f'{f}: missing linked {href}')
 covers=list((p/'assets/covers').glob('*.svg'))
