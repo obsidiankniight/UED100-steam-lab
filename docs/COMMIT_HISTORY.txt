@@ -1,8 +1,16 @@
+ddff03a | 2026-10-31 | Record accurate QA boundaries and provide local live-navigation test for student
+3671a3e | 2026-10-31 | Refresh 208-word rationale using confirmed Assessment 1 mark and verify clickable design
+796586c | 2026-10-31 | Add assessment traceability and honest usability and cross-browser test protocols
+1e68eea | 2026-10-31 | Fix importable SVG wireframe and add accessible clickable walkthrough with Figma handoff
+eab8380 | 2026-10-31 | Improve mobile search access and polish shared UI labels
+497e046 | 2026-10-16 | Refresh development audit trail
 a231e12 | 2026-10-16 | Complete 26 interactive checks and correct source-link audit
 e7896b6 | 2026-10-16 | Record local development history for repository submission
 a5a384c | 2026-10-16 | Add wireframes, tested UI behaviours and assessment rationale
 875e92b | 2026-10-16 | Implement search, cart, wishlist, friends drawer and Library controls
 6f3c265 | 2026-10-16 | Design responsive Steam-inspired interface and original local media
 84b190f | 2026-10-16 | Create linked semantic pages and fictional game catalogue
-
-Note: These are genuine local commits; a public GitHub URL is not yet available.
+These are genuine commits in a local Git history. The exact history is in
+`docs/ued100_complete_history.bundle`, which can be cloned and pushed by the
+student. This does not constitute a published GitHub repository; the URL
+must be added after publication.
