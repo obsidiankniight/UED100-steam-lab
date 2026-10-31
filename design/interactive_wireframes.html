@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STEAM / LAB — interactive wireframe walkthrough</title>
+<style>
+:root{color-scheme:dark;--ink:#e6f0f8;--muted:#b2c6d5;--edge:#334e64;--bg:#0b1520;--lime:#b7eb6e}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,sans-serif}
+header{padding:22px clamp(18px,4vw,48px);border-bottom:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+h1{font-size:clamp(20px,2.8vw,29px);margin:0}header p{margin:3px 0 0;color:var(--muted);font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:9px}nav a,.back{color:var(--ink);border:1px solid var(--edge);border-radius:10px;padding:9px 14px;text-decoration:none;font-size:13px}
+nav a[aria-current="page"],nav a:hover,.back:hover{background:#274453;color:var(--lime)}
+main{max-width:1620px;margin:0 auto;padding:22px clamp(18px,4vw,48px)}
+.info{background:#152534;border:1px solid var(--edge);border-radius:12px;padding:14px 17px;margin:0 0 24px;color:var(--muted);font-size:14px}
+.frame{display:none}.frame:target{display:block}.frame:first-of-type{display:block}main:has(.frame:target) .frame:first-of-type:not(:target){display:none}
+.frame h2{font-size:20px;margin:0 0 13px}.mockup{position:relative;display:block;max-width:1440px;overflow:hidden;border:1px solid var(--edge);border-radius:13px;box-shadow:0 20px 65px #0005}
+.mockup img{display:block;width:100%;height:auto}.mockup.mobile{max-width:390px}
+.hotspot{position:absolute;display:flex;align-items:center;justify-content:center;border:2px dashed transparent;background:transparent;text-align:center;text-decoration:none;color:white;font-size:13px;font-weight:800;transition:background .15s,border-color .15s;outline-offset:-2px}
+.hotspot:hover,.hotspot:focus-visible{background:#b7eb6e29;border-color:var(--lime);outline:3px solid var(--lime)}.hotspot span{background:#0d213bcc;border:1px solid #8fb957;color:#e8ffcf;border-radius:7px;padding:5px 8px;opacity:0}
+.hotspot:hover span,.hotspot:focus-visible span{opacity:1}
+.flow{max-width:900px;margin-top:14px;color:var(--muted);font-size:14px}.flow strong{color:var(--lime)}
+@media(prefers-reduced-motion:reduce){.hotspot{transition:none}}
+</style>
+</head>
+<body>
+<header><div><h1>STEAM / LAB — design walkthrough</h1><p>Interactive planning mockup · independent UED100 student concept</p></div><nav aria-label="Wireframe screens"><a href="#store">Desktop Store</a><a href="#detail">Game details</a><a href="#mobile">Mobile Store</a><a class="back" href="../index.html">Open working prototype</a></nav></header>
+<main>
+<p class="info">This is a browser-based clickable walkthrough of the three editable SVG wireframes. Click the dotted hotspots to follow the key design journey. The Figma/Adobe XD file and prototype links must still be created in those applications, as required by the brief.</p>
+<section id="store" class="frame" aria-labelledby="store-title"><h2 id="store-title">Desktop Store wireframe</h2>
+<div class="mockup"><img src="desktop_home_wireframe.svg" alt="Desktop Steam Store redesign wireframe showing navigation, featured content, product discovery and Friends drawer">
+<a href="#detail" class="hotspot" aria-label="View featured game details" style="left:21%;top:23%;width:46%;height:36%"><span>View featured game</span></a>
+<a href="../browse.html" class="hotspot" aria-label="Open functional Browse screen" style="left:18%;top:6%;width:23%;height:6%"><span>Try Browse</span></a>
+<a href="#mobile" class="hotspot" aria-label="See mobile layout" style="left:75%;top:8%;width:18%;height:8%"><span>See mobile</span></a></div>
+<p class="flow"><strong>Design rationale:</strong> prioritise discovery and one clear featured action; preserve browse categories and expandable Friends rather than putting non-Steam games in the Store.</p></section>
+<section id="detail" class="frame" aria-labelledby="detail-title"><h2 id="detail-title">Game details wireframe</h2>
+<div class="mockup"><img src="desktop_game_wireframe.svg" alt="Desktop game details wireframe with artwork, genre tags, price, purchase controls and media gallery">
+<a href="#store" class="hotspot" aria-label="Back to Store wireframe" style="left:13%;top:12%;width:25%;height:10%"><span>Back to Store</span></a>
+<a href="../game.html?id=neon-drift" class="hotspot" aria-label="Open live game details demo" style="left:69%;top:45%;width:27%;height:22%"><span>Try functional details</span></a></div>
+<p class="flow"><strong>Design rationale:</strong> keep purchase and wishlist controls beside the primary game information, with media previews secondary.</p></section>
+<section id="mobile" class="frame" aria-labelledby="mobile-title"><h2 id="mobile-title">Mobile Store wireframe</h2>
+<div class="mockup mobile"><img src="mobile_home_wireframe.svg" alt="Mobile Steam Store redesign wireframe with compact navigation, featured game, category chips and a recommended shelf">
+<a href="#detail" class="hotspot" aria-label="See featured game details" style="left:6%;top:14%;width:89%;height:27%"><span>View featured game</span></a>
+<a href="../browse.html" class="hotspot" aria-label="Open live Browse screen" style="left:6%;top:44%;width:89%;height:12%"><span>Try responsive Browse</span></a></div>
+<p class="flow"><strong>Design rationale:</strong> show the most-used shopping actions first and progressively reveal lower-priority recommendations on smaller screens.</p></section>
+</main>
+<script>
+function highlightTab(){const h=location.hash||'#store';document.querySelectorAll('nav a[href^="#"]').forEach(a=>{if(a.getAttribute('href')===h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})}
+window.addEventListener('hashchange',highlightTab);highlightTab();
+</script>
+</body>
+</html>
