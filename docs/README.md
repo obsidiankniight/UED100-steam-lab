@@ -55,3 +55,10 @@ Use this source folder as a local Git repository and make further meaningful com
 ## Original assets and license
 
 All game names/art, descriptions, dummy prices, user avatars and mock friend names were authored for this assessment. Icons are original simple stroke vectors. Text 'Steam' refers to the subject of this student comparative UX exercise. Valve owns its trademarks; no affiliation or endorsement is implied.
+
+
+## Updates completed after Assessment 1 mark (31 October 2026)
+
+Assessment 1 received **91/100**, with no written feedback. New evidence: `docs/ASSESSMENT_1_TO_DESIGN_MATRIX.md`, repaired importable SVGs, an interactive browser design walkthrough (`design/interactive_wireframes.html`), and a mobile search entry point. See `docs/QA_STATUS.md` for exact test claims and limitations, and `tests/USABILITY_TEST_PLAN.md` for the actual participant-testing plan.
+
+**Design tool and GitHub:** Figma and GitHub accounts must be connected by the student if the designs or source are to be published directly. Do not substitute the browser clickthrough for the brief's Figma/Adobe XD requirement.
