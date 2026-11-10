@@ -1,0 +1,3 @@
+Date,Feedback source,Observation,Design change,Validation,Result
+2026-11-10,Project owner,Steam uses colour to distinguish playing online away and offline states,Added separate activity classes and accessible labels to Friends panel,Playwright checks four different colour states and offline text label,PASS
+2026-11-10,Project owner,Saved items should show a red heart rather than a green selected button,Switched wishlist selected state to red heart icon on neutral button while cart appearance remains distinct,Playwright verifies saved heart fill and selected button background,PASS

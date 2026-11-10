@@ -27,7 +27,7 @@ git remote add origin https://github.com/YOUR_ACCOUNT/ued100-steam-lab.git
 git push -u origin main
 ```
 
-Replace the sample HTTPS URL with the actual URL GitHub gave you. GitHub may require browser authentication or a credential manager. Do not provide passwords or personal tokens in ChatGPT. Verify the files and commit messages are visible on the live repository and copy the **real** link into your UED100 submission.
+Replace the sample HTTPS URL with the actual URL GitHub gave you. GitHub may require browser authentication or a credential manager. Keep passwords and personal access tokens private. Verify the files and commit messages are visible on the live repository and copy the **real** link into your UED100 submission.
 
 ## 3. Continue honest development
 

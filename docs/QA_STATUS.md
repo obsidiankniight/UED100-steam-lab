@@ -1,13 +1,19 @@
 # UED100 — QA and validation status
 
-Date: 31 October 2026.
+Updated: 10 November 2026.
 
 **Verified inside the working environment:**
 
 - `python tests/source_audit.py`: passed local links, artwork and project structure audit.
-- `python tests/browser_test.py`: **26/26** offline Chromium UI checks passed; this harness injects the real source into browser pages and simulates local storage because navigation is blocked.
+- `python tests/browser_test.py`: **31/31** offline Chromium UI checks passed; this harness injects the real source into browser pages and simulates local storage because navigation is blocked.
 - `python tests/design_walkthrough_test.py`: **9/9** validation checks passed, including parsing all three SVGs and switching between clickable design screens.
 - Microsoft Word rationale rendered to a **clean single page**, with 208 words (excluding references).
+
+**Additional student-requested UX iteration (10 November 2026):**
+
+- Friend status colours now distinguish **playing (green), online (blue), away (yellow), and offline (grey)**. Textual labels are kept as a non-colour cue; a fifth fictional friend illustrates offline.
+- Saved wishlist items now display a **red heart** while their surrounding button remains neutral. The cart remains separately styled.
+- Automated checks were extended to cover the four status indicators and red-heart/neutral-button behaviour; **31/31** checks pass. This is feedback from the project owner, not a claim of independent participant testing.
 
 **Not verified / still to do:**
 

@@ -6,7 +6,7 @@ This is a responsive, interactive student UX prototype redesign of the Steam Sto
 
 **Full instructions:** see [docs/README.md](docs/README.md).
 
-**Still required for the assessment:** import wireframes into Figma/Adobe XD, carry out real-user and cross-browser tests, add your Assessment 1 marker feedback when received, publish the Git repo, and include the link in your submission.
+**Still required for the assessment:** import wireframes into Figma/Adobe XD, carry out manual and cross-browser tests (ideally including an independent user), publish the Git repo, and include the link in your submission.
 
 
 ## Assessment 2 review update

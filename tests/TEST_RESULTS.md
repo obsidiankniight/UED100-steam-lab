@@ -1,14 +1,19 @@
 # Functional test results
 
-**26/26 checks passed.**
+**31/31 checks passed.**
 
 - PASS: Homepage renders 3 game shelves
 - PASS: All original game covers load
 - PASS: Friends dock initially collapsed
+- PASS: Friends panel shows all four activity states
+- PASS: Activity states have distinct presence colours
+- PASS: Offline friend has a visible status label
 - PASS: Friends panel expands upward on hover
 - PASS: Friends panel can stay open on click
 - PASS: Escape closes pinned friend panel
 - PASS: Wishlist updates live count
+- PASS: Saved heart turns red without green button fill
+- PASS: Header wishlist icon reflects saved items
 - PASS: Cart updates live count
 - PASS: Personalise shelves hides selected shelf
 - PASS: No browser scripting errors on home

@@ -5,8 +5,8 @@
 This confirms the browser clickthrough works, but it is not a Figma/Adobe XD prototype and has not been reviewed by real users.
 
 - PASS: Valid importable SVG mobile_home_wireframe.svg
-- PASS: Valid importable SVG desktop_game_wireframe.svg
 - PASS: Valid importable SVG desktop_home_wireframe.svg
+- PASS: Valid importable SVG desktop_game_wireframe.svg
 - PASS: Clickthrough heading renders
 - PASS: Desktop design screen initially visible
 - PASS: Game detail design opens

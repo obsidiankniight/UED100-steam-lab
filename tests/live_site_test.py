@@ -1,7 +1,7 @@
 """Optional live local HTTP smoke tests for the student's computer.
 Run from project root: python tests/live_site_test.py
 Requires Playwright, a working Chromium installation, and permission to navigate to
-127.0.0.1. The ChatGPT working environment BLOCKS browser URL navigation, even
+127.0.0.1. The restricted evaluation environment may block browser URL navigation, even
 loopback, so this script was NOT successfully executed here. Results are not claimed.
 This test is NOT a substitute for real-user testing.
 """

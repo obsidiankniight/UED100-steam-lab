@@ -37,7 +37,7 @@
     $$('.cart-count').forEach(n=>n.textContent=state.cart.size);
     $$('.wishlist-counter').forEach(n=>n.textContent=state.wishlist.size?`(${state.wishlist.size})`:'');
     $$('.cart-counter').forEach(n=>n.textContent=state.cart.size?`(${state.cart.size})`:'');
-    $$('.wishlist-navigation').forEach(n=>n.setAttribute('aria-label',`Wishlist, ${state.wishlist.size} games`));
+    $$('.wishlist-navigation').forEach(n=>{n.setAttribute('aria-label',`Wishlist, ${state.wishlist.size} games`);n.classList.toggle('has-items',state.wishlist.size>0);});
     $$('.cart-navigation').forEach(n=>n.setAttribute('aria-label',`Shopping cart, ${state.cart.size} games`));
   }
   function wishlistButton(g, text=false){

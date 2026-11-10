@@ -10,3 +10,35 @@
 /* Mobile-first search access: topbar search input is hidden at 720px. Keep an obvious search entry point. */
 .mobile-search-link{display:none}
 @media(max-width:720px){.mobile-search-link{display:inline-flex}}
+
+
+/* Friends & Chat presence colours mirror recognisable activity states.
+   Text labels are retained so status is not communicated by colour alone. */
+.friend-dot.playing { background: #79dc83; }
+.friend-dot.online { background: #60bbfa; }
+.friend-dot.away { background: #edc85f; }
+.friend-dot.offline { background: #8995a0; }
+.friend[data-status="playing"] strong { color: #85e190; }
+.friend[data-status="online"] strong { color: #80c9ff; }
+.friend[data-status="away"] strong { color: #f0cf7d; }
+.friend[data-status="offline"] strong { color: #a5b0b9; }
+.friend-avatar[data-i="4"] { background: #39434b; color: #c3ccd3; }
+
+/* A saved game gets a red heart; the rest of the control remains neutral.
+   Cart selection retains its separate colour treatment. */
+.small-actions button[data-action="wishlist"].selected {
+  color: #afc1cd;
+  background: #223440;
+  border-color: #3b4e59;
+}
+button[data-action="wishlist"][aria-pressed="true"] .ico,
+.wishlist-navigation.has-items .ico {
+  color: #f06a7a;
+  fill: #f06a7a;
+  stroke: #f06a7a;
+}
+.btn[data-action="wishlist"][aria-pressed="true"] {
+  color: #e6f2fb;
+  background: #152432c7;
+  border-color: #678095;
+}
